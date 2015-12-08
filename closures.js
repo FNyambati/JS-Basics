@@ -104,15 +104,17 @@ var callFriend = function(){
 */
 
     //Code Here
+function myFunc(num){
+    return function() {
+        console.log(num);
+    }
+}
+var funcArray = []
+    
 
-
-
-//Next Problem
-
-
-
-/*
-  Make the following code work
+for (var i = 0; i <= 5; i++) {
+    funcArray[i] = myFunc(i);
+}
 
   funcArray[0]() //0
   funcArray[1]() //1
@@ -121,7 +123,5 @@ var callFriend = function(){
   funcArray[4]() //4
   funcArray[5]() //5
 
-  *Hint: Don't let this fool you. Break down what's really happening here.
-*/
 
 
